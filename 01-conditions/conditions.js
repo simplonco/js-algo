@@ -56,3 +56,5 @@ Conditions.prototype.prixPhotocopies = function (nombre) {
 Conditions.prototype.stationnementAlternatif = function (jour, numeroMaison) {
 
 };
+
+module.exports = Conditions;
