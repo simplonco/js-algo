@@ -23,7 +23,7 @@ describe('Somme de 2 nombres', function () {
   });
 });
 
-xdescribe('Moyenne de 2 nombres', function () {
+describe('Moyenne de 2 nombres', function () {
   it("Moyenne de 1 et 1", function () {
     expect(basics.moyenne2Nombres(1, 1)).toEqual(1);
   });
@@ -38,7 +38,7 @@ xdescribe('Moyenne de 2 nombres', function () {
 });
 
 
-xdescribe("Aire d'un triangle", function () {
+describe("Aire d'un triangle", function () {
   it("Base = 1 | Hauteur = 2", function () {
     expect(basics.aireTriangle(1, 2)).toEqual(1);
   });
@@ -48,28 +48,28 @@ xdescribe("Aire d'un triangle", function () {
   });
 });
 
-xdescribe("Circonférence d'un cercle", function () {
+describe("Circonférence d'un cercle", function () {
   it("Rayon = 1", function () {
-    expect(basics.circonferenceCercle(1)).toEqual(6);
+    expect(basics.circonferenceCercle(1)).toEqual(6.283185307179586);
   });
 
   it("Rayon = 3", function () {
-    expect(basics.circonferenceCercle(3)).toEqual(18);
+    expect(basics.circonferenceCercle(3)).toEqual(18.84955592153876);
   });
 });
 
 
-xdescribe("Aire d'un cercle", function () {
+describe("Aire d'un cercle", function () {
   it("Rayon = 2", function () {
-    expect(basics.aireCercle(2)).toEqual(12);
+    expect(basics.aireCercle(2)).toEqual(12.566370614359172);
   });
 
   it("Rayon = 3", function () {
-    expect(basics.aireCercle(3)).toEqual(28);
+    expect(basics.aireCercle(3)).toEqual(28.274333882308138);
   });
 });
 
-xdescribe("TVA", function () {
+describe("TVA", function () {
   it("Prix HT = 100 euros", function () {
     expect(basics.tva(100)).toEqual(20);
   });
@@ -83,7 +83,7 @@ xdescribe("TVA", function () {
   });
 });
 
-xdescribe("Intérêts", function () {
+describe("Intérêts", function () {
   it("Pour 100 euros", function () {
     expect(basics.interets(100)).toEqual(2);
   });
@@ -97,7 +97,7 @@ xdescribe("Intérêts", function () {
   });
 });
 
-xdescribe("Nouvelle valeur du capital placé", function () {
+describe("Nouvelle valeur du capital placé", function () {
   it("Je place 100 euros à 3%", function () {
     expect(basics.placement(100, 3)).toEqual(103);
   });
@@ -111,7 +111,7 @@ xdescribe("Nouvelle valeur du capital placé", function () {
   });
 });
 
-xdescribe("Montant total de la facture TTC", function () {
+describe("Montant total de la facture TTC", function () {
   it("100 euros HT * 2 unités * TVA 20%", function () {
     expect(basics.prixTTC(100, 2, 20)).toEqual(240);
   });
@@ -125,7 +125,7 @@ xdescribe("Montant total de la facture TTC", function () {
   });
 });
 
-xdescribe("Durée du trajet", function () {
+describe("Durée du trajet", function () {
   it("Vitesse moyenne = 4 m/s | Distance = 1 km", function () {
     expect(basics.dureeTrajet(4, 1)).toEqual(250);
   });
@@ -139,7 +139,7 @@ xdescribe("Durée du trajet", function () {
   });
 });
 
-xdescribe("Secondes passées depuis minuit", function () {
+describe("Secondes passées depuis minuit", function () {
   it("1 heure, 1 minute et 1 seconde", function () {
     expect(basics.secondes(1, 1, 1)).toEqual(3661);
   });
