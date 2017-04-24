@@ -1,7 +1,7 @@
-var Basics = require('./basics');
+var Basics = require("./basics");
 var basics = new Basics();
 
-describe('Somme de 2 nombres', function () {
+describe("Somme de 2 nombres", function () {
   it("1 + 2", function () {
     expect(basics.somme2Nombres(1, 2)).toEqual(3);
   });
@@ -23,7 +23,7 @@ describe('Somme de 2 nombres', function () {
   });
 });
 
-describe('Moyenne de 2 nombres', function () {
+describe("Moyenne de 2 nombres", function () {
   it("Moyenne de 1 et 1", function () {
     expect(basics.moyenne2Nombres(1, 1)).toEqual(1);
   });
