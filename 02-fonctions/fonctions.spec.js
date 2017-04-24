@@ -27,7 +27,7 @@ describe("Maximum 4 nombres", function () {
   });
 });
 
-describe("Ecart de durées", function () {
+xdescribe("Ecart de durées", function () {
   it("23:42:21 - 13:21:42", function () {
     expect(Fonctions.ecartDurees(23, 42, 21, 13, 21, 42)).toEqual(37239);
   });
@@ -37,7 +37,7 @@ describe("Ecart de durées", function () {
   });
 });
 
-describe("Année bissextile", function () {
+xdescribe("Année bissextile", function () {
   it("2010", function () {
     expect(Fonctions.estBissextile(2010)).toBe(false);
   });
@@ -63,7 +63,7 @@ describe("Année bissextile", function () {
   });
 });
 
-describe("Nombre de jours dans un mois", function () {
+xdescribe("Nombre de jours dans un mois", function () {
   it("2, 2010", function () {
     expect(Fonctions.nombreJours(2, 2010)).toEqual(28);
   });

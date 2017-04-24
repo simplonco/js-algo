@@ -15,7 +15,7 @@ describe("Maximum 2 nombres", function () {
   });
 });
 
-describe("Maximum 3 nombres", function () {
+xdescribe("Maximum 3 nombres", function () {
   it("0 et 0 et 0", function () {
     expect(conditions.maximum3Nombres(0, 0, 0)).toEqual(0);
   });
@@ -33,7 +33,7 @@ describe("Maximum 3 nombres", function () {
   });
 });
 
-describe("Signe d'un nombre", function () {
+xdescribe("Signe d'un nombre", function () {
   it("-1", function () {
     expect(conditions.signe(-1)).toEqual("négatif");
   });
@@ -47,7 +47,7 @@ describe("Signe d'un nombre", function () {
   });
 });
 
-describe("Type d'un triangle", function () {
+xdescribe("Type d'un triangle", function () {
   it("3 et 3 et 3", function () {
     expect(conditions.typeTriangle(3, 3, 3)).toEqual("équilatéral");
   });
@@ -69,7 +69,7 @@ describe("Type d'un triangle", function () {
   });
 });
 
-describe("Nombre de valeurs identiques", function () {
+xdescribe("Nombre de valeurs identiques", function () {
   it("1 et 2 et 3", function () {
     expect(conditions.valeursIdentiques(1, 2, 3)).toEqual(0);
   });
@@ -83,7 +83,7 @@ describe("Nombre de valeurs identiques", function () {
   });
 });
 
-describe("Jour de la semaine", function () {
+xdescribe("Jour de la semaine", function () {
   it("1", function () {
     expect(conditions.jourDeLaSemaine(1)).toEqual("lundi");
   });
@@ -121,7 +121,7 @@ describe("Jour de la semaine", function () {
   });
 });
 
-describe("Nombre de jours dans un mois", function () {
+xdescribe("Nombre de jours dans un mois", function () {
   it("1", function () {
     expect(conditions.nombreJours(1)).toEqual(31);
   });
@@ -171,7 +171,7 @@ describe("Nombre de jours dans un mois", function () {
   });
 });
 
-describe("Intervalle", function () {
+xdescribe("Intervalle", function () {
   it("1 est entre 0 et 2", function () {
     expect(conditions.intervalle(1, 0, 2)).toBe(true);
   });
@@ -185,7 +185,7 @@ describe("Intervalle", function () {
   });
 });
 
-describe("Prix des photocopies", function () {
+xdescribe("Prix des photocopies", function () {
   it("3", function () {
     expect(conditions.prixPhotocopies(3)).toEqual(0.30);
   });
@@ -223,7 +223,7 @@ describe("Prix des photocopies", function () {
   });
 });
 
-describe("Stationnement alternatif", function () {
+xdescribe("Stationnement alternatif", function () {
   it("Le 1er devant le numéro 31", function () {
     expect(conditions.stationnementAlternatif(1, 31)).toBe(true);
   });
