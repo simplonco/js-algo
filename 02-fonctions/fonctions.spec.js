@@ -80,3 +80,29 @@ xdescribe("Nombre de jours dans un mois", function () {
     expect(Fonctions.nombreJours(6, 1985)).toEqual(30);
   });
 });
+
+xdescribe("Date valide", function () {
+  it("2/3/1980", function () {
+    expect(Fonctions.dateValide(2, 3, 1980)).toEqual(true);
+  });
+
+  it("11/6/1985", function () {
+    expect(Fonctions.dateValide(11, 6, 1985)).toEqual(true);
+  });
+
+  it("32/8/2012", function () {
+    expect(Fonctions.dateValide(32, 8, 2012)).toEqual(false);
+  });
+
+  it("28/13/2010", function () {
+    expect(Fonctions.dateValide(28, 13, 2010)).toEqual(false);
+  });
+
+  it("29/2/2017", function () {
+    expect(Fonctions.dateValide(29, 2, 2017)).toEqual(false);
+  });
+
+  it("29/2/2016", function () {
+    expect(Fonctions.dateValide(29, 2, 2016)).toEqual(true);
+  });
+});

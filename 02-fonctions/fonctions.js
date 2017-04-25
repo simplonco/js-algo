@@ -28,7 +28,14 @@ Fonctions.prototype.estBissextile = function (annee) {
 
 // Retourne le nombre de jours qu'il y a dans un mois donné.
 // Si c'est le mois de février, il retourner 28 ou 29 selon si l'année est bissextile.
+// Pour ce faire, utilise la fonction estBissextile() à bon escient.
 Fonctions.prototype.nombreJours = function (mois, annee) {
+
+};
+
+// Vérifie la validité d'une date et retourne vrai si la date valide, sinon faux.
+// Ré-utilise les fonctions précédentes.
+Fonctions.prototype.dateValide = function (jour, mois, annee) {
 
 };
 
