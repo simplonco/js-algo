@@ -1,7 +1,7 @@
 var Tableaux = require("./tableaux");
 var tableaux = new Tableaux();
 
-describe("Inverser les signes", function () {
+describe("inverserSigne(tableau)", function () {
   it("[0, 1, 2, 3, 4]", function () {
     expect(Tableaux.inverserSigne([0, 1, 2, 3, 4])).toEqual([0, 1, 2, 3, 4]);
   });
@@ -15,7 +15,7 @@ describe("Inverser les signes", function () {
   });
 });
 
-xdescribe("Somme", function () {
+xdescribe("somme(tableau)", function () {
   it("[1, 2, 3]", function () {
     expect(Tableaux.somme([1, 2, 3])).toEqual(6);
   });
@@ -25,7 +25,7 @@ xdescribe("Somme", function () {
   });
 });
 
-xdescribe("Compter les éléments négatifs", function () {
+xdescribe("compterNegatifs(tableau)", function () {
   it("[1, 2, 3]", function () {
     expect(Tableaux.compterNegatifs([1, 2, 3])).toEqual(0);
   });
@@ -39,7 +39,7 @@ xdescribe("Compter les éléments négatifs", function () {
   });
 });
 
-xdescribe("De 1 à n", function () {
+xdescribe("nNombres(n)", function () {
   it("n = 5", function () {
     expect(Tableaux.nNombres(5)).toEqual([1, 2, 3, 4, 5]);
   });
@@ -49,19 +49,19 @@ xdescribe("De 1 à n", function () {
   });
 });
 
-xdescribe("De 1 à n, décroissant", function () {
+xdescribe("nNombresDecroissant(n)", function () {
   it("n = 5", function () {
     expect(Tableaux.nNombresDecroissant(5)).toEqual([5, 4, 3, 2, 1]);
   });
 });
 
-xdescribe("De 1 à n, impairs", function () {
+xdescribe("nNombresImpairs(n)", function () {
   it("n = 10", function () {
     expect(Tableaux.nNombresImpairs(10)).toEqual([1, 3, 5, 7, 9]);
   });
 });
 
-xdescribe("De 1 à n, multiples de 5", function () {
+xdescribe("nNombresMultiplesDe5(n)", function () {
   it("n = 2", function () {
     expect(Tableaux.nNombresMultiplesDe5(2)).toEqual([]);
   });
@@ -71,13 +71,13 @@ xdescribe("De 1 à n, multiples de 5", function () {
   });
 });
 
-xdescribe("De 1 à 100, multiples de N", function () {
+xdescribe("nombresMultiplesDeN(n)", function () {
   it("n = 11", function () {
     expect(Tableaux.nombresMultiplesDeN(11)).toEqual([11, 22, 33, 44, 55, 66, 77, 88, 99]);
   });
 });
 
-xdescribe("Unique", function () {
+xdescribe("unique(tableau)", function () {
   it("[0, 1, 2, 3, 4]", function () {
     expect(Tableaux.unique([0, 1, 2, 3, 4])).toBe(true);
   });
@@ -87,7 +87,7 @@ xdescribe("Unique", function () {
   });
 });
 
-xdescribe("Inverser le tableau", function () {
+xdescribe("inverser(tableau)", function () {
   it("[1, 2, 3, 4, 5]", function () {
     expect(Tableaux.inverser([1, 2, 3, 4, 5])).toEqual([5, 4, 3, 2, 1]);
   });
@@ -101,7 +101,7 @@ xdescribe("Inverser le tableau", function () {
   });
 });
 
-xdescribe("Maximum", function () {
+xdescribe("max(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
     expect(Tableaux.max([1, 2, 3, 4])).toEqual(4);
   });
@@ -119,7 +119,7 @@ xdescribe("Maximum", function () {
   });
 });
 
-xdescribe("Minimum", function () {
+xdescribe("min(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
     expect(Tableaux.min([1, 2, 3, 4])).toEqual(1);
   });
@@ -137,7 +137,7 @@ xdescribe("Minimum", function () {
   });
 });
 
-xdescribe("Position du maximum", function () {
+xdescribe("positionMax(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
     expect(Tableaux.positionMax([1, 2, 3, 4])).toEqual(3);
   });
@@ -155,7 +155,7 @@ xdescribe("Position du maximum", function () {
   });
 });
 
-xdescribe("Position du minimum", function () {
+xdescribe("positionMin(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
     expect(Tableaux.positionMin([1, 2, 3, 4])).toEqual(0);
   });
@@ -173,7 +173,7 @@ xdescribe("Position du minimum", function () {
   });
 });
 
-xdescribe("Ordre croissant", function () {
+xdescribe("ordreCroissant(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
     expect(Tableaux.ordreCroissant([1, 2, 3, 4])).toBe(true);
   });

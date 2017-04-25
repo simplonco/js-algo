@@ -1,7 +1,7 @@
 var Conditions = require("./conditions");
 var conditions = new Conditions();
 
-describe("Maximum 2 nombres", function () {
+describe("maximum2Nombres(nombre1, nombre2)", function () {
   it("0 et 0", function () {
     expect(conditions.maximum2Nombres(0, 0)).toEqual(0);
   });
@@ -15,7 +15,7 @@ describe("Maximum 2 nombres", function () {
   });
 });
 
-xdescribe("Maximum 3 nombres", function () {
+xdescribe("maximum3Nombres(nombre1, nombre2, nombre3)", function () {
   it("0 et 0 et 0", function () {
     expect(conditions.maximum3Nombres(0, 0, 0)).toEqual(0);
   });
@@ -33,7 +33,7 @@ xdescribe("Maximum 3 nombres", function () {
   });
 });
 
-xdescribe("Signe d'un nombre", function () {
+xdescribe("signe(nombre)", function () {
   it("-1", function () {
     expect(conditions.signe(-1)).toEqual("négatif");
   });
@@ -47,7 +47,7 @@ xdescribe("Signe d'un nombre", function () {
   });
 });
 
-xdescribe("Type d'un triangle", function () {
+xdescribe("typeTriangle(cote1, cote2, cote3)", function () {
   it("3 et 3 et 3", function () {
     expect(conditions.typeTriangle(3, 3, 3)).toEqual("équilatéral");
   });
@@ -69,7 +69,7 @@ xdescribe("Type d'un triangle", function () {
   });
 });
 
-xdescribe("Nombre de valeurs identiques", function () {
+xdescribe("valeursIdentiques(nombre1, nombre2, nombre3)", function () {
   it("1 et 2 et 3", function () {
     expect(conditions.valeursIdentiques(1, 2, 3)).toEqual(0);
   });
@@ -83,7 +83,7 @@ xdescribe("Nombre de valeurs identiques", function () {
   });
 });
 
-xdescribe("Jour de la semaine", function () {
+xdescribe("jourDeLaSemaine(numeroJour)", function () {
   it("1", function () {
     expect(conditions.jourDeLaSemaine(1)).toEqual("lundi");
   });
@@ -121,7 +121,7 @@ xdescribe("Jour de la semaine", function () {
   });
 });
 
-xdescribe("Nombre de jours dans un mois", function () {
+xdescribe("nombreJours(mois)", function () {
   it("1", function () {
     expect(conditions.nombreJours(1)).toEqual(31);
   });
@@ -171,7 +171,7 @@ xdescribe("Nombre de jours dans un mois", function () {
   });
 });
 
-xdescribe("Intervalle", function () {
+xdescribe("intervalle(nombre1, nombre2, nombre3)", function () {
   it("1 est entre 0 et 2", function () {
     expect(conditions.intervalle(1, 0, 2)).toBe(true);
   });
@@ -185,7 +185,7 @@ xdescribe("Intervalle", function () {
   });
 });
 
-xdescribe("Prix des photocopies", function () {
+xdescribe("prixPhotocopies(nombre)", function () {
   it("3", function () {
     expect(conditions.prixPhotocopies(3)).toEqual(0.30);
   });
@@ -223,7 +223,7 @@ xdescribe("Prix des photocopies", function () {
   });
 });
 
-xdescribe("Stationnement alternatif", function () {
+xdescribe("stationnementAlternatif(jour, numeroMaison)", function () {
   it("Le 1er devant le numéro 31", function () {
     expect(conditions.stationnementAlternatif(1, 31)).toBe(true);
   });

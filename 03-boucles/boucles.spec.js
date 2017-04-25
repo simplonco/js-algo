@@ -1,7 +1,7 @@
 var Boucles = require("./boucles");
 var boucles = new Boucles();
 
-xdescribe("Factorielle", function () {
+xdescribe("factorielle(n)", function () {
   it("0", function () {
     expect(Boucles.factorielle(0)).toEqual(1);
   });
@@ -19,7 +19,7 @@ xdescribe("Factorielle", function () {
   });
 });
 
-xdescribe("Nombre premier", function () {
+xdescribe("nombrePremier(nombre)", function () {
   it("1", function () {
     expect(Boucles.nombrePremier(1)).toBe(true);
   });
@@ -33,7 +33,7 @@ xdescribe("Nombre premier", function () {
   });
 });
 
-xdescribe("Multiplier", function () {
+xdescribe("multiplier(nombre1, nombre2)", function () {
   it("3 * 4", function () {
     expect(Boucles.multiplier(3, 4)).toEqual(12);
   });
@@ -59,7 +59,7 @@ xdescribe("Multiplier", function () {
   });
 });
 
-xdescribe("Nombre miroir", function () {
+xdescribe("miroir(nombre)", function () {
   it("4209", function () {
     expect(Boucles.miroir(4209)).toEqual(9024);
   });

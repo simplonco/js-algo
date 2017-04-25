@@ -1,7 +1,7 @@
 var Tableaux = function() {};
 
 // Inverser le signe de tous les éléments négatifs du tableau et le retourner.
-Tableaux.prototype.inverserSigne(tableau) = function () {
+Tableaux.prototype.inverserSigne = function (tableau) {
 
 };
 

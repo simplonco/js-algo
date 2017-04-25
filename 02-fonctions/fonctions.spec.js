@@ -1,7 +1,7 @@
 var Fonctions = require("./fonctions");
 var fonctions = new Fonctions();
 
-describe("Maximum 4 nombres", function () {
+describe("maximum4nombres(nombre1, nombre2, nombre3, nombre4)", function () {
   it("0, 1, 2, 3", function () {
     expect(Fonctions.maximum4nombres(0, 1, 2, 3)).toEqual(3);
   });
@@ -27,7 +27,7 @@ describe("Maximum 4 nombres", function () {
   });
 });
 
-xdescribe("Ecart de durées", function () {
+xdescribe("ecartDurees(heure1, minute1, seconde1, heure2, minute2, seconde2)", function () {
   it("23:42:21 - 13:21:42", function () {
     expect(Fonctions.ecartDurees(23, 42, 21, 13, 21, 42)).toEqual(37239);
   });
@@ -37,7 +37,7 @@ xdescribe("Ecart de durées", function () {
   });
 });
 
-xdescribe("Année bissextile", function () {
+xdescribe("estBissextile(annee)", function () {
   it("2010", function () {
     expect(Fonctions.estBissextile(2010)).toBe(false);
   });
@@ -63,7 +63,7 @@ xdescribe("Année bissextile", function () {
   });
 });
 
-xdescribe("Nombre de jours dans un mois", function () {
+xdescribe("nombreJours(mois, annee)", function () {
   it("2, 2010", function () {
     expect(Fonctions.nombreJours(2, 2010)).toEqual(28);
   });
@@ -81,7 +81,7 @@ xdescribe("Nombre de jours dans un mois", function () {
   });
 });
 
-xdescribe("Date valide", function () {
+xdescribe("dateValide(jour, mois, annee)", function () {
   it("2/3/1980", function () {
     expect(Fonctions.dateValide(2, 3, 1980)).toEqual(true);
   });

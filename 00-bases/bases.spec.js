@@ -1,7 +1,7 @@
 var Bases = require("./bases");
 var bases = new Bases();
 
-describe("Somme de 2 nombres", function () {
+describe("somme2Nombres(nombre1, nombre2)", function () {
   it("1 + 2", function () {
     expect(bases.somme2Nombres(1, 2)).toEqual(3);
   });
@@ -23,22 +23,22 @@ describe("Somme de 2 nombres", function () {
   });
 });
 
-describe("Moyenne de 2 nombres", function () {
-  it("Moyenne de 1 et 1", function () {
+xdescribe("moyenne2Nombres(nombre1, nombre2)", function () {
+  it("1 et 1", function () {
     expect(bases.moyenne2Nombres(1, 1)).toEqual(1);
   });
 
-  it("Moyenne de 1 et 2", function () {
+  it("1 et 2", function () {
     expect(bases.moyenne2Nombres(1, 2)).toEqual(1.5);
   });
 
-  it("Moyenne de (-1) et 1", function () {
+  it("(-1) et 1", function () {
     expect(bases.moyenne2Nombres(-1, 1)).toEqual(0);
   });
 });
 
 
-describe("Aire d'un triangle", function () {
+xdescribe("aireTriangle(base, hauteur)", function () {
   it("Base = 1 | Hauteur = 2", function () {
     expect(bases.aireTriangle(1, 2)).toEqual(1);
   });
@@ -48,7 +48,7 @@ describe("Aire d'un triangle", function () {
   });
 });
 
-describe("Circonférence d'un cercle", function () {
+xdescribe("circonferenceCercle(rayon)", function () {
   it("Rayon = 1", function () {
     expect(bases.circonferenceCercle(1)).toEqual(6.283185307179586);
   });
@@ -59,7 +59,7 @@ describe("Circonférence d'un cercle", function () {
 });
 
 
-describe("Aire d'un cercle", function () {
+xdescribe("aireCercle(rayon)", function () {
   it("Rayon = 2", function () {
     expect(bases.aireCercle(2)).toEqual(12.566370614359172);
   });
@@ -69,7 +69,7 @@ describe("Aire d'un cercle", function () {
   });
 });
 
-describe("TVA", function () {
+xdescribe("tva(prixHT)", function () {
   it("Prix HT = 100 euros", function () {
     expect(bases.tva(100)).toEqual(20);
   });
@@ -83,7 +83,7 @@ describe("TVA", function () {
   });
 });
 
-describe("Intérêts", function () {
+xdescribe("interets(capital)", function () {
   it("Pour 100 euros", function () {
     expect(bases.interets(100)).toEqual(2);
   });
@@ -97,7 +97,7 @@ describe("Intérêts", function () {
   });
 });
 
-describe("Nouvelle valeur du capital placé", function () {
+xdescribe("placement(capital, tauxInteret)", function () {
   it("Je place 100 euros à 3%", function () {
     expect(bases.placement(100, 3)).toEqual(103);
   });
@@ -111,7 +111,7 @@ describe("Nouvelle valeur du capital placé", function () {
   });
 });
 
-describe("Montant total de la facture TTC", function () {
+xdescribe("prixTTC(prixUnitaireHT, quantite, tauxTVA)", function () {
   it("100 euros HT * 2 unités * TVA 20%", function () {
     expect(bases.prixTTC(100, 2, 20)).toEqual(240);
   });
@@ -125,7 +125,7 @@ describe("Montant total de la facture TTC", function () {
   });
 });
 
-describe("Durée du trajet", function () {
+xdescribe("dureeTrajet(vitesseMoyenne, distance)", function () {
   it("Vitesse moyenne = 4 m/s | Distance = 1 km", function () {
     expect(bases.dureeTrajet(4, 1)).toEqual(250);
   });
@@ -139,7 +139,7 @@ describe("Durée du trajet", function () {
   });
 });
 
-describe("Secondes passées depuis minuit", function () {
+xdescribe("secondes(heure, minute, seconde)", function () {
   it("1 heure, 1 minute et 1 seconde", function () {
     expect(bases.secondes(1, 1, 1)).toEqual(3661);
   });
