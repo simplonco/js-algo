@@ -39,9 +39,31 @@ xdescribe("De 1 à 100, multiples de N", function () {
   });
 });
 
+xdescribe("Factorielle", function () {
+  it("0", function () {
+    expect(Boucles.factorielle(0)).toEqual(1);
+  });
+
+  it("1", function () {
+    expect(Boucles.factorielle(1)).toEqual(1);
+  });
+
+  it("2", function () {
+    expect(Boucles.factorielle(2)).toEqual(2);
+  });
+
+  it("4", function () {
+    expect(Boucles.factorielle(4)).toEqual(24);
+  });
+});
+
 xdescribe("Somme", function () {
   it("[1, 2, 3]", function () {
     expect(Boucles.somme([1, 2, 3])).toEqual(6);
+  });
+
+  it("[7]", function () {
+    expect(Boucles.somme([7])).toEqual(7);
   });
 });
 
@@ -82,5 +104,23 @@ xdescribe("Multiplier", function () {
 
   it("-4 * -5", function () {
     expect(Boucles.multiplier(-4, -5)).toEqual(20);
+  });
+});
+
+xdescribe("Nombre miroir", function () {
+  it("4209", function () {
+    expect(Boucles.miroir(4209)).toEqual(9024);
+  });
+
+  it("333", function () {
+    expect(Boucles.miroir(333)).toEqual(333);
+  });
+
+  it("1234567", function () {
+    expect(Boucles.miroir(1234567)).toEqual(7654321);
+  });
+
+  it("0", function () {
+    expect(Boucles.miroir(0)).toEqual(0);
   });
 });
