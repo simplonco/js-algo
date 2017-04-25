@@ -33,23 +33,23 @@ Par exemple :
 * `it("1 + 2", function () {`
 * `xit("1 + 2", function () {`
 
-__/!\ À l'exception de l'activation et la désactivation de tests, ne pas modifier les fichiers /!\__
+*/!\ À l'exception de l'activation et la désactivation de tests, ne pas modifier les fichiers*
 
 ## Séries d'exercices
 
 Les exercices sont à faire dans les fichiers `NOM_SERIE.js` où toutes les fonctions sont déjà décrites. Il ne reste plus qu'à coder la logique de chaque fonction.
 
-__/!\ Ne pas modifier la structure du fichier /!\__
+*/!\ Ne pas modifier la structure du fichier*
 
 ### Quelques contraintes
 
-__/!\ Tout ce qui n'est pas explicitement autorisé est interdit /!\__
+*/!\ Tout ce qui n'est pas explicitement autorisé est interdit*
 
 Il est interdit d'utiliser la moindre fonction de la librairie standard de JavaScript.
 
 L'objectif est d'acquérir les bases de la programmation et d'apprendre à se servir des outils mis à disposition à bon escient, mais aussi de se creuser les méninges et de muscler sa logique.
 
-__Il n'est pas nécessaire d'être bon en mathématiques__ pour réussir les exercices proposés et devenir développeur. __Par contre il est essentiel d'apprendre à faire des recherches__ sur Internet pour trouver des solutions et acquérir du savoir.
+**Remarque: il n'est pas nécessaire d'être bon en mathématiques** pour réussir les exercices proposés et devenir développeur. **Par contre il est essentiel d'apprendre à faire des recherches** sur Internet pour trouver des solutions et acquérir du savoir.
 
 #### Pour la série `bases`
 
