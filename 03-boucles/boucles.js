@@ -1,42 +1,8 @@
 var Boucles = function() {};
 
-// Créer et retourner un tableau qui contient les nombres de 1 à n.
-Boucles.prototype.nNombres = function (n) {
-
-};
-
-// Créer et retourner un tableau qui contient les nombres de 1 à n
-// dans l'ordre décroissant.
-Boucles.prototype.nNombresDecroissant = function (n) {
-
-};
-
-// Créer et retourner un tableau qui contient les nombres impairs de 1 à n.
-// Un nombre impair est un nombre qui n'est pas divisible par 2.
-Boucles.prototype.nNombresImpairs = function (n) {
-
-};
-
-// Créer et retourner un tableau qui contient les nombres multiples de 5
-// dans l'intervalle de 1 à n.
-Boucles.prototype.nNombresMultiplesDe5 = function (n) {
-
-};
-
-// Créer et retourner un tableau qui contient les nombres multiples de n
-// dans l'intervalle de de 1 à 100.
-Boucles.prototype.nombresMultiplesDeN = function (n) {
-
-};
-
 // Calculer et retourner la factorielle de n.
 // Par convention, factorielle(0) == 1.
-Boucles.prototype.factorielle = function () {
-
-};
-
-// Calculer et retourner la somme des nombres contenus dans le tableau.
-Boucles.prototype.somme = function (tableau) {
+Boucles.prototype.factorielle = function (n) {
 
 };
 
@@ -55,6 +21,6 @@ Boucles.prototype.multiplier = function (nombre1, nombre2) {
 // Calculer et retourner le miroir d'un nombre. Le miroir d'un nombre est obtenu
 // en lisant le nombre à l'envers.
 // Par exemple, le miroir de 4209 est 9024.
-Boucles.prototype.miroir = function () {
+Boucles.prototype.miroir = function (nombre) {
 
 };
