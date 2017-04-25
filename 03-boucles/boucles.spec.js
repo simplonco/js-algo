@@ -60,7 +60,27 @@ xdescribe("Nombre premier", function () {
 });
 
 xdescribe("Multiplier", function () {
-  it("3 et 4", function () {
+  it("3 * 4", function () {
     expect(Boucles.multiplier(3, 4)).toEqual(12);
+  });
+
+  it("0 * 2", function () {
+    expect(Boucles.multiplier(0, 2)).toEqual(0);
+  });
+
+  it("5 * 0", function () {
+    expect(Boucles.multiplier(5, 0)).toEqual(0);
+  });
+
+  it("-1 * 2", function () {
+    expect(Boucles.multiplier(-1, 2)).toEqual(-2);
+  });
+
+  it("3 * -3", function () {
+    expect(Boucles.multiplier(3, -3)).toEqual(-9);
+  });
+
+  it("-4 * -5", function () {
+    expect(Boucles.multiplier(-4, -5)).toEqual(20);
   });
 });
