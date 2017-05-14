@@ -75,7 +75,7 @@ xdescribe("tva(prixHT)", function () {
   });
 
   it("Prix HT = 199 euros", function () {
-    expect(bases.tva(199)).toEqual(39.800000000000004);
+    expect(bases.tva(199)).toEqual(39.8);
   });
 
   it("Prix HT = 1.99 euros", function () {
