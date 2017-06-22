@@ -17,25 +17,25 @@ describe("inverserSigne(tableau)", function () {
 
 xdescribe("somme(tableau)", function () {
   it("[1, 2, 3]", function () {
-    expect(Tableaux.somme([1, 2, 3])).toEqual(6);
+    expect(Tableaux.somme([1, 2, 3])).toBe(6);
   });
 
   it("[7]", function () {
-    expect(Tableaux.somme([7])).toEqual(7);
+    expect(Tableaux.somme([7])).toBe(7);
   });
 });
 
 xdescribe("compterNegatifs(tableau)", function () {
   it("[1, 2, 3]", function () {
-    expect(Tableaux.compterNegatifs([1, 2, 3])).toEqual(0);
+    expect(Tableaux.compterNegatifs([1, 2, 3])).toBe(0);
   });
 
   it("[-1, -2, -3]", function () {
-    expect(Tableaux.compterNegatifs([-1, -2, -3])).toEqual(3);
+    expect(Tableaux.compterNegatifs([-1, -2, -3])).toBe(3);
   });
 
   it("[0, -1, 2]", function () {
-    expect(Tableaux.compterNegatifs([0, -1, 2])).toEqual(1);
+    expect(Tableaux.compterNegatifs([0, -1, 2])).toBe(1);
   });
 });
 
@@ -103,73 +103,73 @@ xdescribe("inverser(tableau)", function () {
 
 xdescribe("max(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
-    expect(Tableaux.max([1, 2, 3, 4])).toEqual(4);
+    expect(Tableaux.max([1, 2, 3, 4])).toBe(4);
   });
 
   it("[4, 1, 2, 3]", function () {
-    expect(Tableaux.max([4, 1, 2, 3])).toEqual(4);
+    expect(Tableaux.max([4, 1, 2, 3])).toBe(4);
   });
 
   it("[1, 2, 4, 3]", function () {
-    expect(Tableaux.max([1, 2, 4, 3])).toEqual(4);
+    expect(Tableaux.max([1, 2, 4, 3])).toBe(4);
   });
 
   it("[5]", function () {
-    expect(Tableaux.max([5])).toEqual(5);
+    expect(Tableaux.max([5])).toBe(5);
   });
 });
 
 xdescribe("min(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
-    expect(Tableaux.min([1, 2, 3, 4])).toEqual(1);
+    expect(Tableaux.min([1, 2, 3, 4])).toBe(1);
   });
 
   it("[4, 1, 2, 3]", function () {
-    expect(Tableaux.min([4, 1, 2, 3])).toEqual(1);
+    expect(Tableaux.min([4, 1, 2, 3])).toBe(1);
   });
 
   it("[2, 4, 3, 1]", function () {
-    expect(Tableaux.min([2, 4, 3, 1])).toEqual(1);
+    expect(Tableaux.min([2, 4, 3, 1])).toBe(1);
   });
 
   it("[5]", function () {
-    expect(Tableaux.min([5])).toEqual(5);
+    expect(Tableaux.min([5])).toBe(5);
   });
 });
 
 xdescribe("positionMax(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
-    expect(Tableaux.positionMax([1, 2, 3, 4])).toEqual(3);
+    expect(Tableaux.positionMax([1, 2, 3, 4])).toBe(3);
   });
 
   it("[4, 1, 2, 3]", function () {
-    expect(Tableaux.positionMax([4, 1, 2, 3])).toEqual(0);
+    expect(Tableaux.positionMax([4, 1, 2, 3])).toBe(0);
   });
 
   it("[1, 2, 4, 3]", function () {
-    expect(Tableaux.positionMax([1, 2, 4, 3])).toEqual(2);
+    expect(Tableaux.positionMax([1, 2, 4, 3])).toBe(2);
   });
 
   it("[5]", function () {
-    expect(Tableaux.positionMax([5])).toEqual(0);
+    expect(Tableaux.positionMax([5])).toBe(0);
   });
 });
 
 xdescribe("positionMin(tableau)", function () {
   it("[1, 2, 3, 4]", function () {
-    expect(Tableaux.positionMin([1, 2, 3, 4])).toEqual(0);
+    expect(Tableaux.positionMin([1, 2, 3, 4])).toBe(0);
   });
 
   it("[4, 1, 2, 3]", function () {
-    expect(Tableaux.positionMin([4, 1, 2, 3])).toEqual(1);
+    expect(Tableaux.positionMin([4, 1, 2, 3])).toBe(1);
   });
 
   it("[2, 4, 3, 1]", function () {
-    expect(Tableaux.positionMin([2, 4, 3, 1])).toEqual(3);
+    expect(Tableaux.positionMin([2, 4, 3, 1])).toBe(3);
   });
 
   it("[5]", function () {
-    expect(Tableaux.positionMin([5])).toEqual(0);
+    expect(Tableaux.positionMin([5])).toBe(0);
   });
 });
 

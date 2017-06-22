@@ -3,33 +3,33 @@ var conditions = new Conditions();
 
 describe("maximum2Nombres(nombre1, nombre2)", function () {
   it("0 et 0", function () {
-    expect(conditions.maximum2Nombres(0, 0)).toEqual(0);
+    expect(conditions.maximum2Nombres(0, 0)).toBe(0);
   });
 
   it("-1 et 1", function () {
-    expect(conditions.maximum2Nombres(-1, 1)).toEqual(1);
+    expect(conditions.maximum2Nombres(-1, 1)).toBe(1);
   });
 
   it("1 et 3", function () {
-    expect(conditions.maximum2Nombres(1, 3)).toEqual(3);
+    expect(conditions.maximum2Nombres(1, 3)).toBe(3);
   });
 });
 
 xdescribe("maximum3Nombres(nombre1, nombre2, nombre3)", function () {
   it("0 et 0 et 0", function () {
-    expect(conditions.maximum3Nombres(0, 0, 0)).toEqual(0);
+    expect(conditions.maximum3Nombres(0, 0, 0)).toBe(0);
   });
 
   it("-1 et 0 et 1", function () {
-    expect(conditions.maximum3Nombres(-1, 0, 1)).toEqual(1);
+    expect(conditions.maximum3Nombres(-1, 0, 1)).toBe(1);
   });
 
   it("1 et 3 et 2", function () {
-    expect(conditions.maximum3Nombres(1, 3, 2)).toEqual(3);
+    expect(conditions.maximum3Nombres(1, 3, 2)).toBe(3);
   });
 
   it("7 et 6 et 5", function () {
-    expect(conditions.maximum3Nombres(7, 6, 5)).toEqual(7);
+    expect(conditions.maximum3Nombres(7, 6, 5)).toBe(7);
   });
 });
 
@@ -71,15 +71,15 @@ xdescribe("typeTriangle(cote1, cote2, cote3)", function () {
 
 xdescribe("valeursIdentiques(nombre1, nombre2, nombre3)", function () {
   it("1 et 2 et 3", function () {
-    expect(conditions.valeursIdentiques(1, 2, 3)).toEqual(0);
+    expect(conditions.valeursIdentiques(1, 2, 3)).toBe(0);
   });
 
   it("1 et 1 et 2", function () {
-    expect(conditions.valeursIdentiques(1, 1, 2)).toEqual(2);
+    expect(conditions.valeursIdentiques(1, 1, 2)).toBe(2);
   });
 
   it("1 et 1 et 1", function () {
-    expect(conditions.valeursIdentiques(1, 1, 1)).toEqual(3);
+    expect(conditions.valeursIdentiques(1, 1, 1)).toBe(3);
   });
 });
 
@@ -123,51 +123,51 @@ xdescribe("jourDeLaSemaine(numeroJour)", function () {
 
 xdescribe("nombreJours(mois)", function () {
   it("1", function () {
-    expect(conditions.nombreJours(1)).toEqual(31);
+    expect(conditions.nombreJours(1)).toBe(31);
   });
 
   it("2", function () {
-    expect(conditions.nombreJours(2)).toEqual(28);
+    expect(conditions.nombreJours(2)).toBe(28);
   });
 
   it("3", function () {
-    expect(conditions.nombreJours(3)).toEqual(31);
+    expect(conditions.nombreJours(3)).toBe(31);
   });
 
   it("4", function () {
-    expect(conditions.nombreJours(4)).toEqual(30);
+    expect(conditions.nombreJours(4)).toBe(30);
   });
 
   it("5", function () {
-    expect(conditions.nombreJours(5)).toEqual(31);
+    expect(conditions.nombreJours(5)).toBe(31);
   });
 
   it("6", function () {
-    expect(conditions.nombreJours(6)).toEqual(30);
+    expect(conditions.nombreJours(6)).toBe(30);
   });
 
   it("7", function () {
-    expect(conditions.nombreJours(7)).toEqual(31);
+    expect(conditions.nombreJours(7)).toBe(31);
   });
 
   it("8", function () {
-    expect(conditions.nombreJours(8)).toEqual(31);
+    expect(conditions.nombreJours(8)).toBe(31);
   });
 
   it("9", function () {
-    expect(conditions.nombreJours(9)).toEqual(30);
+    expect(conditions.nombreJours(9)).toBe(30);
   });
 
   it("10", function () {
-    expect(conditions.nombreJours(10)).toEqual(31);
+    expect(conditions.nombreJours(10)).toBe(31);
   });
 
   it("11", function () {
-    expect(conditions.nombreJours(11)).toEqual(30);
+    expect(conditions.nombreJours(11)).toBe(30);
   });
 
   it("12", function () {
-    expect(conditions.nombreJours(12)).toEqual(31);
+    expect(conditions.nombreJours(12)).toBe(31);
   });
 });
 
@@ -187,39 +187,39 @@ xdescribe("intervalle(nombre1, nombre2, nombre3)", function () {
 
 xdescribe("prixPhotocopies(nombre)", function () {
   it("3", function () {
-    expect(conditions.prixPhotocopies(3)).toEqual(0.30);
+    expect(conditions.prixPhotocopies(3)).toBeCloseTo(0.30, 2);
   });
 
   it("10", function () {
-    expect(conditions.prixPhotocopies(10)).toEqual(1);
+    expect(conditions.prixPhotocopies(10)).toBeCloseTo(1, 0);
   });
 
   it("11", function () {
-    expect(conditions.prixPhotocopies(11)).toEqual(1.09);
+    expect(conditions.prixPhotocopies(11)).toBeCloseTo(1.09, 2);
   });
 
   it("19", function () {
-    expect(conditions.prixPhotocopies(19)).toEqual(1.81);
+    expect(conditions.prixPhotocopies(19)).toBeCloseTo(1.81, 2);
   });
 
   it("20", function () {
-    expect(conditions.prixPhotocopies(20)).toEqual(1.9);
+    expect(conditions.prixPhotocopies(20)).toBeCloseTo(1.9, 1);
   });
 
   it("29", function () {
-    expect(conditions.prixPhotocopies(29)).toEqual(2.71);
+    expect(conditions.prixPhotocopies(29)).toBeCloseTo(2.71, 2);
   });
 
   it("30", function () {
-    expect(conditions.prixPhotocopies(30)).toEqual(2.8);
+    expect(conditions.prixPhotocopies(30)).toBeCloseTo(2.8, 1);
   });
 
   it("31", function () {
-    expect(conditions.prixPhotocopies(31)).toEqual(2.88);
+    expect(conditions.prixPhotocopies(31)).toBeCloseTo(2.88, 2);
   });
 
   it("56", function () {
-    expect(conditions.prixPhotocopies(56)).toEqual(4.88);
+    expect(conditions.prixPhotocopies(56)).toBeCloseTo(4.88, 2);
   });
 });
 
